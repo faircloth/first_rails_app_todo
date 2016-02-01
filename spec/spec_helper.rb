@@ -24,6 +24,9 @@ RSpec.configure do |config|
   # Allowed us to apply the find todo_list helper to all todo_item spec features
   config.include TodoListHelpers, type: :feature
 
+  # Allows us to reference the dom_id method withing the TodoListHelper
+  config.include RailsDomIdHelper, type: :feature
+
 
   # ## Mock Framework
   #
