@@ -20,6 +20,11 @@ ActiveRecord::Migration.maintain_test_schema!
 
 
 RSpec.configure do |config|
+
+  # Allowed us to apply the find todo_list helper to all todo_item spec features
+  config.include TodoListHelpers, type: :feature
+
+
   # ## Mock Framework
   #
   # If you prefer to use mocha, flexmock or RR, uncomment the appropriate line:
